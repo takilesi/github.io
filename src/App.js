@@ -1,27 +1,9 @@
-import React from "react"; 
-import { BrowserRouter as Router, Route, Link } from "react-router-dom"; 
-import { Index } from "./pages"; 
-import { About } from "./pages/about"; 
+import React from 'react'
 
-function AppRouter() {
+function App() {
   return (
-    <Router>
-      <div>
-        <nav>
-          <ul>
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link to="/aobut/">About</Link>
-            </li>
-          </ul>
-        </nav>
-        <Route path="/" exact component={Index} />
-        <Route path="/about/" component={About} />
-      </div>
-    </Router>
-  );
+    <div>App</div>
+  )
 }
 
-export default AppRouter;
+export default App
