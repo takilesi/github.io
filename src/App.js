@@ -12,12 +12,10 @@ import { Route, Routes } from 'react-router-dom';
 import folio from './folio.png';
 import logo from './logo.svg';
 
+
 function App() {
 
   let { windowWidth, clickedProfile, setPageMount, setCharacters, fetchRick, grabCharacters } = useContext(AppContext)
-
-  console.log(folio-removebg); 
-  console.log(logo); 
 
   // setPageMount(true)
   // console.log(window.innerWidth)

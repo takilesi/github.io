@@ -3,11 +3,11 @@ import { Link } from 'react-router-dom'
 
 function HomePage() {
 
-    const Root = () => {
-        const hide = (toeNail) => {
-            toeNail.classList.add('hide')
-        }
-    }
+    // const Root = () => {
+    //     const hide = (toeNail) => {
+    //         toeNail.classList.add('hide')
+    //     }
+    // }
 
   return (
     <div> 
@@ -18,9 +18,8 @@ function HomePage() {
                 <div className="infoBox">
                     <p></p>
                     <p className = "homePageFont">  Douglas L. Deckert </p>
-                    {/* <marquee class="marq" behavior="scroll" direction="right">
-                        <img src="src/ricksspaceship-removebg-preview_360.png" width="125" height="50" alt="smile" vspace="0%" />
-                    </marquee> */}
+                    <img src={folio} alt=""/>
+                    <img src={port} alt=""/>
                 </div>
             </div>
         </Link>
