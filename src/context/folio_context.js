@@ -19,7 +19,9 @@ const AppContextProvider = (props) =>  {
     return (
         <AppContext.Provider value ={{
             port, 
-            folio
+            folio, 
+            windowWidth, 
+            setWindowWidth
         }}>
         {props.children}
         </AppContext.Provider>
