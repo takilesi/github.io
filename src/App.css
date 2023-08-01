@@ -3,10 +3,43 @@
 }
 
 
+
+
+.pageBody{
+  width: 100vw; 
+  height: 100vh;
+  position: relative;
+  background: linear-gradient(black, grey, blue)
+}
+.myName{
+ 
+  left: 30vw; 
+  font-size: 5vh;
+  font-family: cursive;
+  position: absolute; 
+  z-index: 3;
+  color: white; 
+  top: 20%;
+  left: 50%; 
+  transform: translate(-50%, -50%);
+}
 .folio{
-  Height: 80vh;
+  background-image:  url("folio.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 50%;
+  left: 50%; 
+  transform: translate(-50%, -50%);
+  height: 80vh; 
+  width: 70vh; 
 
 }
 .port{
-  Height: 60vh;
+  height: 60vh;
+  position: absolute;
+  top: 53%;
+  left: 50%; 
+  transform: translate(-50%, -50%);
+  z-index: 2;
 }

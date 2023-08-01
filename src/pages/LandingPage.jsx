@@ -9,20 +9,22 @@ function HomePage() {
 
   return (
     <div> 
-        <p className="acomment">The dopest social network in the galaxy...</p>
-        {/* // anything in here will be clickable  */}
-        <Link to='/home' className="mainLink">
+        
+      {/* // anything beneath Link is clickable  */}
+      <Link to='/home' className="landingPage">
             
-            <div className="pageBody">
-           
-                <div className="infoBox">
-                    <p></p>
-                    <p className = "homePageFont">  Douglas L. Deckert </p>
-                    <img class="folio" src={folio} alt=""/>
-                    <img class="port"  src={port} alt=""/>
-                </div>
-            </div>
-        </Link>
+        <div className="pageBody">
+            
+          <p className="myName">  Douglas L. Deckert </p>
+          <div className="folio">
+            {/* <img src={folio} alt=""/> */}
+          </div>
+          <div className="port">
+            <img className="port"  src={port} alt=""/>
+          </div>
+                
+        </div>
+      </Link>
     </div>
   )
 }

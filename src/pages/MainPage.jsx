@@ -7,7 +7,7 @@ function Desktop() {
 
   return (
     <div>
-        
+        Main Page
     </div>
   )
 }

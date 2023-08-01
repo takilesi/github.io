@@ -1,7 +1,6 @@
 import { useContext, useEffect } from 'react';
 
-import Desktop from './pages/Desktop';
-import Mobile from './pages/Mobile';
+import MainPage from './pages/MainPage';
 import HomePage from './pages/LandingPage';
 
 import { AppContext } from './context/folio_context';
@@ -11,6 +10,7 @@ import { Route, Routes } from 'react-router-dom';
 import folio from './folio.png';
 import logo from './logo.svg';
 
+import "./App.css"
 
 function App() {
 
@@ -28,7 +28,7 @@ function App() {
           <Routes> 
             <Route path="*" element={<h1>you are lost</h1>} />
             <Route path="/" element={<HomePage />} />
-            <Route path="/home" element={<Mobile />}/>
+            <Route path="/home" element={<MainPage />}/>
             {/* <Route path={`/profile/${clickedProfile.name?.replaceAll(' ', '')}`} element={<Profile profile={clickedProfile} parent="mobile"/>}/> */}
           </Routes>
         </div>
