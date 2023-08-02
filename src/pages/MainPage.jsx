@@ -6,7 +6,7 @@ function Desktop() {
     let { folio, port } = useContext(AppContext);
 
   return (
-    <div>
+    <div className="mainPage">
         Main Page
     </div>
   )

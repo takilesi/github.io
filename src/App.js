@@ -12,6 +12,7 @@ import logo from './logo.svg';
 
 import "./App.css"
 
+
 function App() {
 
   let { windowWidth, clickedProfile, setPageMount, setCharacters, fetchRick, grabCharacters } = useContext(AppContext)
