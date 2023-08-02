@@ -14,14 +14,18 @@ function HomePage() {
       <Link to='/home' className="landingPage">
             
         <div className="pageBody">
-            
-          <p className="myName">  Douglas L. Deckert </p>
-          <div className="folio">
-            {/* <img src={folio} alt=""/> */}
+          <div className="pageBodyTopHalf">
+            <div className="lightningOne"></div>
+            <div className="lightningTwo"></div>
+            <p className="myName">  Douglas L. Deckert </p>
+            <div className="folio">
+
+            </div>
+            <div className="port">
+                <img className="port"  src={port} alt=""/>
+            </div>
           </div>
-          <div className="port">
-            <img className="port"  src={port} alt=""/>
-          </div>
+
                 
         </div>
       </Link>
