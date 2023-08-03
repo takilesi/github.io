@@ -35,8 +35,15 @@
   margin: auto;
   display: block;
 }
-.item:hover .innerText {
-  display: block;
+.innerCardContainer{
+  left: 0px; 
+  top: 0px; 
+  z-index: 20;
+
+}
+#spades{
+
+ 
 }
 
 

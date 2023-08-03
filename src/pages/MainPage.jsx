@@ -10,17 +10,38 @@ function Desktop() {
     let { deck } = useContext(AppContext);
 
   const [suits, setSuits] = useState(0); 
+  const [spadeHover, setSpadeHover] = useState(false);
+  const [heartHover, setHeartHover] = useState(false);
+  const [diamondHover, setDiamondHover] = useState(false);
+  const [clubHover, setClubHover] = useState(false);
 
   return (
     <div className="mainPage">
         <p className="mainPageTopText">Pick a Card</p>
         <div className="mainPageTopBox">
-          <div className="cardContainer" onClick={()=>setSuits(1)} >
-            <img src={deck[0].image} alt="" width="100%" />
-            <div class="innerText">
-              <p>Ice cream fruitcake cotton candy.</p>
+          <div className="cardContainer"> 
+            <div className="innerCardContainer"
+               id="spades"
+               onClick={()=>setSuits(1)} 
+               onMouseEnter={() => setSpadeHover(true)}
+               onMouseLeave={() => setSpadeHover(false)}>
+              <img src={deck[0].image} alt="" width="100%" />
             </div>
+            {spadeHover && (
+            <p >
+              ♠ Personal Development ♠
+            </p>
+            )}
           </div>
+
+
+
+
+
+
+
+
+
           <div className="cardContainer" onClick={()=>setSuits(2)}>
             <img src={deck[13].image} alt="" width="100%" />
           </div>
@@ -44,5 +65,6 @@ function Desktop() {
     </div>
   )
 }
+
 
 export default Desktop
