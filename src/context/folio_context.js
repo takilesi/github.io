@@ -9,19 +9,41 @@ const AppContextProvider = (props) =>  {
     const folio = folioImage
     const port = portImage
 
-    const [ windowWidth, setWindowWidth ] = useState(window.innerWidth)
-
-    window.onresize = () => {
-        // console.log('window is resizing')
-        setWindowWidth(window.innerWidth)
+    const [deck, setDeck] = useState("")
+        
+    const getDeck = async () => {
+    const response = await axios.get(`https://deckofcardsapi.com/api/deck/new/draw/?count=52`)
+    
+    let sortedCards = response.data.cards.sort(
+        (c1, c2) => (c1.suit < c2.suit) ? 1 : (c1.suit > c2.suit) ? -1 : 0);
+    console.log("Sorted", sortedCards); 
+    setDeck(response.data.cards);
+    
+  
+    
     }
+    
+    useEffect(()=>{
+        getDeck()
+    },[])
+
+
+    const [ spades, setSpades ] = useState([])
+    const [ hearts, setHearts ] = useState([])
+    const [ diamonds, setDiamonds ] = useState([])
+    const [ clubs, setClubs ] = useState([])
+
+
+
 
     return (
         <AppContext.Provider value ={{
+            deck, 
+            setDeck,
+            getDeck,
             port, 
             folio, 
-            windowWidth, 
-            setWindowWidth
+            diamonds
         }}>
         {props.children}
         </AppContext.Provider>
