@@ -16,25 +16,13 @@ const AppContextProvider = (props) =>  {
     
     let sortedCards = response.data.cards.sort(
         (c1, c2) => (c1.suit < c2.suit) ? 1 : (c1.suit > c2.suit) ? -1 : 0);
-    console.log("Sorted", sortedCards); 
-    setDeck(response.data.cards);
-    
-  
-    
+        console.log("Sorted", sortedCards); 
+        setDeck(sortedCards);
     }
     
     useEffect(()=>{
         getDeck()
     },[])
-
-
-    const [ spades, setSpades ] = useState([])
-    const [ hearts, setHearts ] = useState([])
-    const [ diamonds, setDiamonds ] = useState([])
-    const [ clubs, setClubs ] = useState([])
-
-
-
 
     return (
         <AppContext.Provider value ={{
@@ -42,8 +30,7 @@ const AppContextProvider = (props) =>  {
             setDeck,
             getDeck,
             port, 
-            folio, 
-            diamonds
+            folio
         }}>
         {props.children}
         </AppContext.Provider>

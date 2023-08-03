@@ -15,15 +15,8 @@ import "./App.css"
 
 function App() {
 
-  let { windowWidth, clickedProfile, setPageMount, setCharacters, fetchRick, grabCharacters } = useContext(AppContext)
+  let { clickedProfile, setPageMount } = useContext(AppContext)
 
-  // setPageMount(true)
-  // console.log(window.innerWidth)
-  // console.log('CLICKED PROFILE', clickedProfile)
-  // console.log('width',windowWidth)
-
-    // mobile
-  
       return (
         <div className="App">
           <Routes> 

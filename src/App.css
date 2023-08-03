@@ -29,12 +29,25 @@
 .cardContainer{
   border: solid black;
   background-color: white; 
-  width: 10%; 
+  width: 15vw; 
   height: 80%; 
-  width: 100px;
+  /* width: 100px; */
   margin: auto;
   display: block;
 }
+.item:hover .innerText {
+  display: block;
+}
+
+
+/* ---- BOTTOM BOX CSS ---- */
+.bottomBox{
+  border: solid purple; 
+  top: 35%; 
+  width: 100%; 
+  height: 65%;
+}
+
 
 
 /* ---- LANDING PAGE CSS ---- */

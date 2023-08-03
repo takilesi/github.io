@@ -5,7 +5,7 @@ import { AppContext } from "../context/folio_context";
 
 function HomePage() {
 
-    let { windowWidth, folio, port } = useContext(AppContext)
+    let { folio, port } = useContext(AppContext)
 
   return (
     <div> 
@@ -25,8 +25,7 @@ function HomePage() {
                 <img className="port"  src={port} alt=""/>
             </div>
           </div>
-
-                
+ 
         </div>
       </Link>
     </div>
