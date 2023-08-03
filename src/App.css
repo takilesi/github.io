@@ -18,7 +18,7 @@
 }
 .mainPageTopBox{
   margin-top: -3vh;
-  border: solid blue; 
+  /* border: solid blue;  */
   width: 100%; 
   height: 35%;  
   display: flex;
@@ -27,8 +27,8 @@
   align-items: center;
 }
 .cardContainer{
-  border: solid black;
-  background-color: white; 
+  
+  
   width: 15vw; 
   height: 80%; 
   /* width: 100px; */
@@ -42,14 +42,21 @@
 
 }
 #spades{
-
- 
+ margin-bottom: -1vh;
 }
-
+#hearts{
+  margin-bottom: -1vh;
+ }
+ #diamonds{
+  margin-bottom: -1vh;
+ }
+ #clubs{
+  margin-bottom: -1vh;
+ }
 
 /* ---- BOTTOM BOX CSS ---- */
 .bottomBox{
-  border: solid purple; 
+  /* border: solid purple;  */
   top: 35%; 
   width: 100%; 
   height: 65%;

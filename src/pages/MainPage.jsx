@@ -19,6 +19,8 @@ function Desktop() {
     <div className="mainPage">
         <p className="mainPageTopText">Pick a Card</p>
         <div className="mainPageTopBox">
+          
+          {/* SPADES */}
           <div className="cardContainer"> 
             <div className="innerCardContainer"
                id="spades"
@@ -28,29 +30,64 @@ function Desktop() {
               <img src={deck[0].image} alt="" width="100%" />
             </div>
             {spadeHover && (
-            <p >
-              ♠ Personal Development ♠
-            </p>
+              <div >
+                <p id="spades">Personal</p>
+                <p>Development</p>
+              </div>
             )}
           </div>
 
-
-
-
-
-
-
-
-
-          <div className="cardContainer" onClick={()=>setSuits(2)}>
-            <img src={deck[13].image} alt="" width="100%" />
+          {/* HEARTS */}
+          <div className="cardContainer"> 
+            <div className="innerCardContainer"
+               id="spades"
+               onClick={()=>setSuits(2)} 
+               onMouseEnter={() => setHeartHover(true)}
+               onMouseLeave={() => setHeartHover(false)}>
+              <img src={deck[13].image} alt="" width="100%" />
+            </div>
+            {heartHover && (
+              <div >
+                <p id="spades">Personal</p>
+                <p>Interests</p>
+              </div>
+            )}
           </div>
-          <div className="cardContainer" onClick={()=>setSuits(3)}>
-            <img src={deck[26].image} alt="" width="100%" />
+
+          {/* DIAMONDS */}
+          <div className="cardContainer"> 
+            <div className="innerCardContainer"
+               id="spades"
+               onClick={()=>setSuits(3)} 
+               onMouseEnter={() => setDiamondHover(true)}
+               onMouseLeave={() => setDiamondHover(false)}>
+              <img src={deck[26].image} alt="" width="100%" />
+            </div>
+            {diamondHover && (
+              <div >
+                <p id="spades">Value</p>
+                <p>Proposition</p>
+              </div>
+            )}
           </div>
-          <div className="cardContainer" onClick={()=>setSuits(4)}>
-            <img src={deck[39].image} alt="" width="100%" />
+
+          {/* CLUBS */}
+          <div className="cardContainer"> 
+            <div className="innerCardContainer"
+               id="spades"
+               onClick={()=>setSuits(3)} 
+               onMouseEnter={() => setClubHover(true)}
+               onMouseLeave={() => setClubHover(false)}>
+              <img src={deck[39].image} alt="" width="100%" />
+            </div>
+            {clubHover && (
+              <div >
+                <p id="spades">Social</p>
+                <p>Activities</p>
+              </div>
+            )}
           </div>
+
         </div>
         <div className="bottomBox">
           {suits === 1 && <Spades /> }
