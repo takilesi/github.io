@@ -5,12 +5,21 @@ import { AppContext } from "../context/folio_context";
 
 function Spades() {
     return (
-        <div> 
-            <h1>Spades</h1>
-            {/* // anything beneath Link is clickable  */}
-            <Link to='/home' className="landingPage">
-                
-            </Link>
+        <div className='bottomBox'> 
+            Spades
+            <div className="scrollContainer">
+
+                <div className="bottomBoxBulletPoints">
+                    left
+                </div>
+                <div className="bottomBoxBulletPoints">
+                    center 
+                </div>
+                <div className="bottomBoxBulletPoints">
+                    right 
+                </div>
+
+            </div>
         </div>
       )
     }

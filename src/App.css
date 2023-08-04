@@ -7,7 +7,7 @@
 .mainPage{
   background-image:  url("https://img.freepik.com/premium-photo/normal-squares-alternating_640852-361.jpg");
   width: 100%; 
-  height: 100vh; 
+  height: 103vh;  
   background-repeat: no-repeat;
   background-size: cover; 
   color: white; 
@@ -17,50 +17,72 @@
   font-size: 5vh;
 }
 .mainPageTopBox{
+
   margin-top: -3vh;
-  /* border: solid blue;  */
+  border: solid blue; 
   width: 100%; 
-  height: 35%;  
+  height: 30%;  
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
 }
 .cardContainer{
+  border: solid purple; 
   
-  
-  width: 15vw; 
-  height: 80%; 
-  /* width: 100px; */
+  height: 70%; 
   margin: auto;
   display: block;
+  align-items: center;
 }
 .innerCardContainer{
-  left: 0px; 
-  top: 0px; 
-  z-index: 20;
-
+  
 }
-#spades{
- margin-bottom: -1vh;
+#spades,#hearts{
+  transform: rotate(90deg);
+  width: 12vw; 
 }
-#hearts{
-  margin-bottom: -1vh;
- }
- #diamonds{
-  margin-bottom: -1vh;
- }
- #clubs{
-  margin-bottom: -1vh;
- }
+#diamonds,#clubs{
+  transform: rotate(90deg);
+  width: 12vw; 
+}
 
-/* ---- BOTTOM BOX CSS ---- */
+.space{
+  height: 1vh; 
+}
+
+/* ---- MAIN PAGE BOTTOM BOX CSS ---- */
 .bottomBox{
-  /* border: solid purple;  */
-  top: 35%; 
+  border: solid purple; 
+  /* top: 30vh;  */
   width: 100%; 
-  height: 65%;
+  /* height: 65%; */
+  display: flex; 
+  flex-direction: column;
 }
+
+.scrollContainer{
+  width: 100vw;
+  display: flex; 
+  flex-direction: row;
+  flex-wrap: nowrap;
+  overflow-y: scroll;
+
+}
+.bottomBoxBulletPoints{
+  border: solid blue; 
+  width: 70vw; 
+  height: 51vh;
+  flex-shrink: 0;
+}
+.heading{
+  margin-top: -2vh;
+  font-size: 2.5vh;
+}
+
+
+
+
 
 
 
@@ -123,80 +145,46 @@
 }
 
 
-
-/* ---- UNUSED ---- */
-
-
-/* black,black,black,black, black,black,black,black, black,black,black,black,rgb(46, 46, 46),rgb(76, 76, 76),rgb(102, 102, 102),grey,rgb(90, 90, 165),rgb(63, 62, 193),rgb(34, 34, 221),blue,blue,blue,blue */
-.pageBodyTopHalf{
-  /* height: 50vh;  */
-  /* width: 60vw; */
-  /* top: 0; */
-
-
-  /* margin-left: -100px; */
-  /* background-repeat: no-repeat;
-  background-size: cover;  */
-  /* background-image:  url("https://www.gifs.cc/backgroundimages/lightning-rain.jpg"); */
+/* ---- HEART BOX COMPONENTS ---- */
+.heartBoxR{
+  border: solid red; 
+  width: 100vw;
+  height: 50vh; 
+  margin-top: 2vh;
+  display: flex; 
+  flex-direction: row;
+}
+.heartContainers{
+  border: solid black; 
+  width: 33vw; 
+  height: 50vh; 
+}
+.heartsButtons{
+  background-color: rgb(181, 28, 28);
+  color: white; 
+  border-radius: 5px;
+  margin: 10px;
 }
 
-/* 13, 13, 13     black
-46, 46, 46
-76, 76, 76
-102, 102, 102
-126, 126, 129  grey
-90, 90, 165
-63, 62, 193
-34, 34, 221
-23, 3, 253     blue */
-
-
-
-/* @keyframes lightning {
-  0%   {background: linear-gradient(black,black,black,black, black,black,black,black, black,black,black,black,black,rgb(46, 46, 46),rgb(76, 76, 76),rgb(102, 102, 102),grey,rgb(90, 90, 165),rgb(63, 62, 193),rgb(34, 34, 221),blue,blue);}
-  5%   {background: linear-gradient(black,black,black,black, black,black,black,black, black,black,black,black,rgb(46, 46, 46),rgb(76, 76, 76),rgb(102, 102, 102),grey,rgb(90, 90, 165),rgb(63, 62, 193),rgb(34, 34, 221),blue,blue,blue);}
-  10%  {background: linear-gradient(black,black,black,black, black,black,black,black, black,black,black,rgb(46, 46, 46),rgb(76, 76, 76),rgb(102, 102, 102),grey,rgb(90, 90, 165),rgb(63, 62, 193),rgb(34, 34, 221),blue,blue,blue,blue);}
-  15%  {background: linear-gradient(black,black,black,black, black,black,black,black, black,black,rgb(46, 46, 46),rgb(76, 76, 76),rgb(102, 102, 102),grey,rgb(90, 90, 165),rgb(63, 62, 193),rgb(34, 34, 221),blue,blue,blue,blue,blue);}
-  20%  {background: linear-gradient(black,black,black,black, black,black,black,black, black,rgb(46, 46, 46),rgb(76, 76, 76),rgb(102, 102, 102),grey,rgb(90, 90, 165),rgb(63, 62, 193),rgb(34, 34, 221),blue,blue,blue,blue,blue,blue);}
-  25%  {background: linear-gradient(black,black,black,black, black,black,black,black, rgb(46, 46, 46),rgb(76, 76, 76),rgb(102, 102, 102),grey,rgb(90, 90, 165),rgb(63, 62, 193),rgb(34, 34, 221),blue,blue,blue,blue,blue,blue,blue);}
-  30%  {background: linear-gradient(black,black,black,black, black,black,black,rgb(46, 46, 46),rgb(76, 76, 76),rgb(102, 102, 102),grey,rgb(90, 90, 165),rgb(63, 62, 193),rgb(34, 34, 221),blue,blue,blue,blue,blue,blue,blue,blue);}
-  35%  {background: linear-gradient(black,black,black,black, black,black,rgb(46, 46, 46),rgb(76, 76, 76),rgb(102, 102, 102),grey,rgb(90, 90, 165),rgb(63, 62, 193),rgb(34, 34, 221),blue,blue,blue,blue,blue,blue,blue,blue,blue);}
-  40%  {background: linear-gradient(black,black,black,black, black,rgb(46, 46, 46),rgb(76, 76, 76),rgb(102, 102, 102),grey,rgb(90, 90, 165),rgb(63, 62, 193),rgb(34, 34, 221),blue,blue,blue,blue,blue,blue,blue,blue,blue,blue);}
-  45%  {background: linear-gradient(black,black,black,rgb(46, 46, 46),rgb(76, 76, 76),rgb(102, 102, 102),grey,rgb(90, 90, 165),rgb(63, 62, 193),rgb(34, 34, 221),blue,blue,blue,blue,blue,blue,blue,blue,blue,blue,blue,blue);}
-  50%  {background: linear-gradient(black,black,rgb(46, 46, 46),rgb(76, 76, 76),rgb(102, 102, 102),grey,rgb(90, 90, 165),rgb(63, 62, 193),rgb(34, 34, 221),blue,blue,blue,blue,blue,blue,blue,blue,blue,blue,blue,blue,blue);}
-  55%  {background: linear-gradient(black,black,black,rgb(46, 46, 46),rgb(76, 76, 76),rgb(102, 102, 102),grey,rgb(90, 90, 165),rgb(63, 62, 193),rgb(34, 34, 221),blue,blue,blue,blue,blue,blue,blue,blue,blue,blue,blue,blue);}
-  60%  {background: linear-gradient(black,black,black,black, black,rgb(46, 46, 46),rgb(76, 76, 76),rgb(102, 102, 102),grey,rgb(90, 90, 165),rgb(63, 62, 193),rgb(34, 34, 221),blue,blue,blue,blue,blue,blue,blue,blue,blue,blue);}
-  65%  {background: linear-gradient(black,black,black,black, black,black,rgb(46, 46, 46),rgb(76, 76, 76),rgb(102, 102, 102),grey,rgb(90, 90, 165),rgb(63, 62, 193),rgb(34, 34, 221),blue,blue,blue,blue,blue,blue,blue,blue,blue);}
-  70%  {background: linear-gradient(black,black,black,black, black,black,black,rgb(46, 46, 46),rgb(76, 76, 76),rgb(102, 102, 102),grey,rgb(90, 90, 165),rgb(63, 62, 193),rgb(34, 34, 221),blue,blue,blue,blue,blue,blue,blue,blue);}
-  75%  {background: linear-gradient(black,black,black,black, black,black,black,black, rgb(46, 46, 46),rgb(76, 76, 76),rgb(102, 102, 102),grey,rgb(90, 90, 165),rgb(63, 62, 193),rgb(34, 34, 221),blue,blue,blue,blue,blue,blue,blue);}
-  80%  {background: linear-gradient(black,black,black,black, black,black,black,black, black,rgb(46, 46, 46),rgb(76, 76, 76),rgb(102, 102, 102),grey,rgb(90, 90, 165),rgb(63, 62, 193),rgb(34, 34, 221),blue,blue,blue,blue,blue,blue);}
-  85%  {background: linear-gradient(black,black,black,black, black,black,black,black, black,black,rgb(46, 46, 46),rgb(76, 76, 76),rgb(102, 102, 102),grey,rgb(90, 90, 165),rgb(63, 62, 193),rgb(34, 34, 221),blue,blue,blue,blue,blue);}
-  90%  {background: linear-gradient(black,black,black,black, black,black,black,black, black,black,black,rgb(46, 46, 46),rgb(76, 76, 76),rgb(102, 102, 102),grey,rgb(90, 90, 165),rgb(63, 62, 193),rgb(34, 34, 221),blue,blue,blue,blue);}
-  95%  {background: linear-gradient(black,black,black,black, black,black,black,black, black,black,black,black,rgb(46, 46, 46),rgb(76, 76, 76),rgb(102, 102, 102),grey,rgb(90, 90, 165),rgb(63, 62, 193),rgb(34, 34, 221),blue,blue,blue);}
-  100% {background: linear-gradient(black,black,black,black, black,black,black,black, black,black,black,black,black,rgb(46, 46, 46),rgb(76, 76, 76),rgb(102, 102, 102),grey,rgb(90, 90, 165),rgb(63, 62, 193),rgb(34, 34, 221),blue,blue);}
+/* #rctcPic1{
+  background-image:  url("rctstats.png");
+  background-repeat: no-repeat;
+  background-size:contain;
+  width: 97vw; 
+  margin-left: 1vw; 
+  margin-right: 10vw;
 } */
 
 
 
 
-.lightningOne{
-  /* background-image:  url("https://clipart-library.com/img/1827671.gif"); */
-  /* height: 30%; 
-  width: 20%;
-  left: 70%; 
-  z-index: 10; */
-  /* top: 50%;
-  left: 50%; 
-  /* transform: translate(-50%, -50%); */
-  /* height: 30vh; 
-  z-index: 5;
-  position: absolute;  */
-}
-.lightningTwo{
-  /* background-image:  url("https://clipart-library.com/img/1379256.gif");
-  height: 50vh; */
-  /* top: 40%;
-  left: 10%; 
-  position: absolute; 
-  z-index: 4; */
-}
+
+
+
+
+
+
+
+
+
+

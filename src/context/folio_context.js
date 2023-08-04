@@ -9,7 +9,7 @@ const AppContextProvider = (props) =>  {
     const folio = folioImage
     const port = portImage
 
-    const [deck, setDeck] = useState("")
+    const [deck, setDeck] = useState(null)
         
     const getDeck = async () => {
     const response = await axios.get(`https://deckofcardsapi.com/api/deck/new/draw/?count=52`)
