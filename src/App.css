@@ -28,15 +28,17 @@
   align-items: center;
 }
 .cardContainer{
+  max-height: 100px;
   border: solid purple; 
-  
-  height: 70%; 
   margin: auto;
+  margin-top: -0px;
   display: block;
   align-items: center;
+  z-index: 10;
+  background-color: black;
 }
 .innerCardContainer{
-  
+  /* max-height: 100px;    */
 }
 #spades,#hearts{
   transform: rotate(90deg);
