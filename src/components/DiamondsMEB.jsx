@@ -3,7 +3,7 @@ import magicEight from '../magicEight.jpg';
 
 function DiamondsMEB() {
   return (
-    <div id="dMF" className="">
+    <div className="">
         <img className="diamond"  src={magicEight} alt=""/>
     </div>
   )

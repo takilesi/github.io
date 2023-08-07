@@ -65,8 +65,8 @@ function Desktop() {
             </div>
             {diamondHover && (
               <div >
-                <p className="heading">Value</p>
-                <p className="heading">Proposition</p>
+                <p className="heading">Projects</p>
+                <p className="heading">Styling</p>
               </div>
             )}
           </div>

@@ -56,7 +56,7 @@
 /* ---- MAIN PAGE BOTTOM BOX CSS ---- */
 .bottomBox{
   border: solid purple; 
-
+  /* height: 100%;  */
   width: 100%; 
   /* height: 65%; */
   display: flex; 
@@ -228,25 +228,25 @@
   background-size:cover;
 }
 .diamondFlex{
-  display: flex; 
-  justify-content: center;
-  align-items: center;
-
+  position: relative;
+  
   
 
 }
 .diamond{
-  width: 50%;
-  height: 100%;
-  /* object-fit: cover; */
-  /* overflow: hidden; */
+  max-width: 95vw;
+  max-height: 60vh;
+
+  object-fit:contain;
+  /* overflow:hidden;  */
+
+
+  margin: 0;
+  position: absolute;
+  top: 68%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
-/* #dMF{
-  background-image:  url("react-movies.jpg");
-  background-repeat: no-repeat;
-  background-size:contain;
-  width: 80%; 
-} */
 
 
 
@@ -259,18 +259,6 @@
 
 
 
-
-
-
-
-/* #rctcPic1{
-  background-image:  url("rctstats.png");
-  background-repeat: no-repeat;
-  background-size:contain;
-  width: 97vw; 
-  margin-left: 1vw; 
-  margin-right: 10vw;
-} */
 
 
 

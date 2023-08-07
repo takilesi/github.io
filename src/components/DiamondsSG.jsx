@@ -3,7 +3,7 @@ import studentGrader from '../studentGrader.jpg';
 
 function DiamondsSG() {
   return (
-    <div id="dMF" className="">
+    <div className="">
         <img className="diamond"  src={studentGrader} alt=""/>
     </div>
   )

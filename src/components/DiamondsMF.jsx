@@ -4,7 +4,7 @@ import reactimgmovies from '../reactimgmovies.jpg';
 
 function DiamondsMF() {
   return (
-    <div id="dMF" className="">
+    <div className="">
         <img className="diamond"  src={reactimgmovies} alt=""/>
     </div>
 

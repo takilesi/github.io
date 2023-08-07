@@ -4,9 +4,9 @@ import calculator from '../calculator.jpg';
 function DiamondsC() {
   return (
  
-    <div id="dMF" className="">
-        <img className="diamond"  src={calculator} alt=""/>
-<   /div>
+    <div className="">
+        <img className="diamond" style={{width: '100%'}} src={calculator} alt=""/>
+    </div>
     
   )
 }

@@ -3,7 +3,7 @@ import spaceBook from '../spaceBook.jpg';
 
 function DiamondsSB() {
   return (
-    <div id="dMF" className="">
+    <div className="">
         <img className="diamond"  src={spaceBook} alt=""/>
     </div>  
   )

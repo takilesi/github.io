@@ -3,7 +3,7 @@ import wordFind from '../wordFind.jpg';
 
 function DiamondsWF() {
   return (
-    <div id="dMF" className="">
+    <div className="">
         <img className="diamond"  src={wordFind} alt=""/>
     </div>
   )
