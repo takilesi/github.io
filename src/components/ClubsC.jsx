@@ -4,7 +4,8 @@ import meetup from '../meetup.jpg';
 function ClubsC() {
   return (
     <div className="">
-        <p className="hikes">Locations: </p>
+        <h2 className="hikes">Locations:</h2>
+        <br/>
         <p className="hikes">Hays Woods</p>
         <p className="hikes">Riverview Park</p>
         <p className="hikes">Crafton Park</p>
