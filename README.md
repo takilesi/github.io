@@ -1,3 +1,28 @@
+
+-----------------
+
+Sample Component Hierarchy
+
+v AppContextProvider
+  v Context.Provider
+    v BrowserRouter
+      v Router
+        v Navigation.Provider
+          v Location.Provder
+            v App
+              v Routes
+                v RenderedRoute
+                  v Route.Provider
+                    v Desktop
+                      v Diamonds
+                        DiamondsMEB
+
+---------------
+
+API from deckofcardsapi.com:     https://deckofcardsapi.com/api/deck/new/draw/?count=52
+
+---------------
+
 Folder Structure (with files)
 
 (after each suit name follows L,C,R (left, center, rigth) or letter abreviations for image files contained within)
