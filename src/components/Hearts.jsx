@@ -1,3 +1,4 @@
+// personal interests go here 
 import React, { useContext, useState } from 'react'
 import { Link } from 'react-router-dom'
 // import { useContext, useEffect } from 'react';
@@ -8,13 +9,13 @@ import HeartsR from '../components/HeartsR'
 
 function Hearts() {
 
-    const [box, setBox] = useState(0);
+    const [box, setBoxH] = useState(0);
 
     return (
-        <div> 
-            <button className="heartsButtons" onClick={()=>setBox(1)} >MeepUp</button>
-            <button className="heartsButtons" onClick={()=>setBox(2)} >Vocal Confluence</button>
-            <button className="heartsButtons" onClick={()=>setBox(3)} >Rachel Carson Trail Challenge</button>  
+        <div className="heartsJsx"> 
+            <button className="heartsButtons" onClick={()=>setBoxH(1)} >Coffee Roasting</button>
+            <button className="heartsButtons" onClick={()=>setBoxH(2)} >Vocal Confluence</button>
+            <button className="heartsButtons" onClick={()=>setBoxH(3)} >Rachel Carson Trail Challenge</button>  
             <div className="bottomBox">
                 {box === 1 && <HeartsL /> }
                 {box === 2 && <HeartsC /> }

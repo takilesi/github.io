@@ -54,11 +54,10 @@
 /* ---- MAIN PAGE BOTTOM BOX CSS ---- */
 .bottomBox{
   border: solid purple; 
-  /* top: 30vh;  */
+
   width: 100%; 
   /* height: 65%; */
   display: flex; 
-  flex-direction: column;
 }
 
 .scrollContainer{
@@ -76,8 +75,10 @@
   flex-shrink: 0;
 }
 .heading{
+  top: -5vh;
   margin-top: -2vh;
   font-size: 2.5vh;
+  z-index: 5;
 }
 
 
@@ -146,18 +147,22 @@
 
 
 /* ---- HEART BOX COMPONENTS ---- */
-.heartBoxR{
+.heartBox{
   border: solid red; 
-  width: 100vw;
-  height: 50vh; 
-  margin-top: 2vh;
+  width: 100%;
+  height: 57vh; 
+  margin-top: 2%;
   display: flex; 
-  flex-direction: row;
+
 }
 .heartContainers{
   border: solid black; 
-  width: 33vw; 
-  height: 50vh; 
+
+  width: 33%; 
+  height: 100%; 
+  margin: 20px; 
+  margin-top: 0px;
+  border-radius: 10px;
 }
 .heartsButtons{
   background-color: rgb(181, 28, 28);
@@ -165,6 +170,96 @@
   border-radius: 5px;
   margin: 10px;
 }
+.heartsJsx{
+  width: 100%; 
+}
+
+
+/* hearts left 3 pics  */
+#heartPicL-L{
+  background-image:  url("coffee.jpg");
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+#heartPicL-C{
+  background-image:  url("roaster.jpg");
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+#heartPicL-R{
+  background-image:  url("vesuviana.jpg");
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+/* hearts center 3 pics  */
+#heartPicC-L{
+  background-image:  url("totalvocal.jpg");
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+#heartPicC-C{
+  background-image:  url("harmonyuniversity.jpg");
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+#heartPicC-R{
+  background-image:  url("starlake.jpeg");
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+/* hearts right 3 pics  */
+#heartPicR-L{
+  background-image:  url("rct2013.jpg");
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+#heartPicR-C{
+  background-image:  url("rct2022.jpg");
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+#heartPicR-R{
+  background-image:  url("DougSmiling2023.jpg");
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+.diamondFlex{
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+
+  
+
+}
+.diamond{
+  width: 50%;
+  height: 100%;
+  /* object-fit: cover; */
+  /* overflow: hidden; */
+}
+/* #dMF{
+  background-image:  url("react-movies.jpg");
+  background-repeat: no-repeat;
+  background-size:contain;
+  width: 80%; 
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* #rctcPic1{
   background-image:  url("rctstats.png");
