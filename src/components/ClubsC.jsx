@@ -1,10 +1,10 @@
 import React from 'react'
-import landmark from '../landmark.jpg'; 
+import meetup from '../meetup.jpg'; 
 
 function ClubsC() {
   return (
     <div className="">
-    <img className="diamond" style={{width: '100%'}} src={landmark} alt=""/>
+    <img className="diamond" style={{width: '100%'}} src={meetup} alt=""/>
 </div>
   )
 }
