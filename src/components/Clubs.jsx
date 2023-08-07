@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import ClubsC from '../components/ClubsC'
 
 function Clubs() {
@@ -7,7 +7,7 @@ function Clubs() {
 
     return (
         <div className="heartsJsx"> 
-            <button className="heartsButtons" onClick={()=>setBoxH(1)} >Landmark Education</button>
+            <button className="heartsButtons" onClick={()=>setBoxH(1)} >MeetUp Hikes</button>
             {/* <button className="heartsButtons" onClick={()=>setBoxH(2)} >Vocal Confluence</button>
             <button className="heartsButtons" onClick={()=>setBoxH(3)} >Rachel Carson Trail Challenge</button>   */}
             <div className="bottomBox">
